@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bisma Batool — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- attract-ball background, sits behind everything -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- nav -->
+<nav class="nav">
+  <a href="#home" class="nav-mark">Bisma Batool</a>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact Me</a>
+  </div>
+  <a href="https://github.com/bisma-batool-rizwan" target="_blank" rel="noopener" class="nav-github">Github</a>
+</nav>
+
+<!-- home / hero -->
+<header id="home" class="hero hero-centered">
+  <div class="hero-text">
+    <p class="eyebrow">Hi, my name is</p>
+    <h1 class="hero-title">Bisma Batool</h1>
+    <h2 class="hero-role">Programming Student</h2>
+    <p class="hero-intro">
+     A passionate programming student and aspiring software developer from Pakistan.
+     I enjoy building web projects with HTML, CSS, and Python while continuously 
+     learning new technologies and improving my coding skills.
+    </p>
+  </div>
+</header>
+
+<!-- about -->
+<section id="about" class="section">
+  <p class="section-label">About Me</p>
+  <div class="about-grid about-centered">
+    <div>
+      <h3 class="about-role">Programming Student</h3>
+      <p class="about-text">
+       I'm Bisma Batool, a passionate programming student from Pakistan with a growing interest in Python
+      and Web Development. I enjoy turning ideas into simple, functional projects while continuously
+      improving my coding and problem-solving skills.<br>
+     I'm currently learning new technologies, building projects, and expanding my knowledge every day.
+      My goal is to become a skilled software developer and create applications that make a real impact.
+      </p>
+      <a href="https://github.com/bisma-batool-rizwan" target="_blank" rel="noopener" class="btn btn-ghost">Github</a> <br>
+      <a href="https://www.linkedin.com/in/bisma-batool-rizwan/" target="_blank" rel="noopener" class="btn btn-ghost">LnkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- education -->
+<section id="education" class="section">
+  <p class="section-label">My Education</p>
+  <div class="timeline">
+    <article class="timeline-item">
+      <p class="timeline-date">2024 – 2026</p>
+      <h3>Matriculation (Science)</h3>
+      <div class="timeline-body">
+        <div>
+          <h4>GBSS Shamsi Islamia , Karachi</h4>
+          <p>Completed matriculation with a science group.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- skills -->
+<section id="skills" class="section">
+  <p class="section-label">My Skills</p>
+  <div class="skills-columns">
+    <div class="skills-col">
+      <h4>Frontend</h4>
+      <div class="skill-bar" data-level="70">
+        <div class="skill-top"><span>HTML</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="70">
+        <div class="skill-top"><span>CSS</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="70">
+        <div class="skill-top"><span>JavaScript</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+    </div>
+    <div class="skills-col">
+      <h4>Backend</h4>
+      <div class="skill-bar" data-level="50">
+        <div class="skill-top"><span>Python</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+    </div>
+    <div class="skills-col">
+      <h4>Other</h4>
+      <div class="skill-bar" data-level="70">
+        <div class="skill-top"><span>Github</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="80">
+        <div class="skill-top"><span>Netlify</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+      <div class="skill-bar" data-level="80">
+        <div class="skill-top"><span>VS Code</span></div>
+        <div class="bar-track"><div class="bar-fill"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact" class="section contact-section">
+  <p class="section-label">Contact Me</p>
+  <h2 class="contact-title">Let's work together.</h2>
+  <p class="contact-sub">Fill in the form, or reach out directly.</p>
+
+  <div class="contact-grid">
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xqevgobn" method="POST">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" id="submit-btn" class="btn btn-primary">Send message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+
+    <div class="contact-direct">
+      <a href="mailto:bismabatool.1409@gmail.com" class="direct-link">
+        <span class="direct-icon">✉</span>
+        <span><strong>Email</strong><small>bismabatool.1409@gmail.com</small></span>
+      </a>
+      <a href="https://wa.me/03148508705" target="_blank" rel="noopener" class="direct-link">
+        <span class="direct-icon">☎</span>
+        <span><strong>WhatsApp</strong><small>Chat directly</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Copyright © 2026 Bisma Batool </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
