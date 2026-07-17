@@ -2,7 +2,7 @@
 
 A personal portfolio website showcasing my background, education, and skills as a programming student.
 
-🔗 **Live Site:** https://bisma-batool.netlify.app/
+🔗 **Live Site:** https://bismabatool.netlify.app/
 
 ## About
 
